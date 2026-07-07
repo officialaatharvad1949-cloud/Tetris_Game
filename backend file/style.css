@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    /* Match the column width to your item's total width */
+    grid-template-columns: repeat(10, 30px); 
+    /* Optional: adds a gap between blocks */
+    gap: 0; 
+}
+.game-layout-container {
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.item {
+    background-color: rgb(105, 105, 110);
+    height: 30px;
+    width: 30px;
+    /* This ensures the 2px border stays INSIDE the 30px width */
+    box-sizing: border-box; 
+    border: 2px solid black; 
+}
+#game-control button {
+    font-size: 1.2rem;       
+    padding: 12px 24px;      
+    font-weight: bold;       
+    border-radius: 6px;     
+    cursor: pointer;         
+}
